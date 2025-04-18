@@ -1,0 +1,172 @@
+/* Styles généraux */
+body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animation de transition pour les liens */
+a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Style pour le header */
+nav {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Style pour les sélecteurs */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+select:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style pour les cartes */
+.rounded-2xl {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Style pour le bouton de recherche */
+button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animations fluides */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Style pour les sections */
+.bg-white, .bg-gray-50 {
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Effets de hover améliorés */
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Style pour le texte */
+.text-gray-900 {
+    color: #1d1d1f;
+}
+
+.text-gray-700 {
+    color: #515154;
+}
+
+.text-gray-500 {
+    color: #86868b;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .text-7xl {
+        font-size: 3.5rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Style pour le header */
+nav a:hover {
+    color: #4A5568;
+    border-bottom: 2px solid #4A5568;
+}
+
+/* Style pour les cartes */
+.shadow-lg {
+    transition: transform 0.3s ease;
+}
+
+.shadow-lg:hover {
+    transform: translateY(-5px);
+}
+
+/* Style pour la section hero */
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style pour les boutons */
+.btn {
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour la fenêtre de filtrage */
+.filter-window {
+    background-color: #FFD700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les checkboxes */
+.form-checkbox {
+    cursor: pointer;
+    border: 2px solid #CBD5E0;
+    transition: all 0.2s ease;
+}
+
+.form-checkbox:checked {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.form-checkbox:hover {
+    border-color: #3B82F6;
+}
+
+/* Style pour les labels des checkboxes */
+label.cursor-pointer:hover span {
+    color: #3B82F6;
+    transition: color 0.2s ease;
+}
+
+/* Style pour les cartes avec images */
+.group {
+    transition: transform 0.3s ease;
+}
+
+.group:hover {
+    transform: translateY(-10px);
+}
+
+.group:hover .bg-black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Animation zoom sur les images de fond */
+.group:hover .transition-transform {
+    transform: scale(1.1);
+}
+
+/* Style pour le bouton de recherche */
+.bg-blue-500 {
+    transition: all 0.3s ease;
+}
+
+.bg-blue-500:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 

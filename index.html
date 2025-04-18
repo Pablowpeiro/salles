@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Salles de Cinéma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sfpro bg-[#f5f5f7]">
+    <nav class="bg-[#ffffff] backdrop-blur-lg bg-opacity-70 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between h-16 items-center px-8">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Compte</a>
+                    <a href="nos-salles.html" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Nos salles</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Offres</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative z-10 flex flex-col justify-center items-center h-full px-4 sm:px-6 lg:px-8">
+                <h1 class="text-5xl md:text-7xl font-light text-white text-center tracking-tight">
+                    Réservez votre<br>
+                    salle de cinéma
+                </h1>
+                <p class="mt-6 text-xl text-gray-200 max-w-3xl text-center font-light">
+                    Une expérience unique pour vos événements
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="bg-white rounded-2xl shadow-sm p-8 backdrop-blur-xl bg-opacity-70">
+                    <h2 class="text-3xl font-light text-center mb-12 text-gray-900">Trouvez votre salle</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-gray-700">Capacité minimum</label>
+                            <select class="w-full p-3 border-0 bg-gray-50 rounded-xl text-sm focus:ring-2 focus:ring-gray-200">
+                                <option>50-120</option>
+                                <option>120-300</option>
+                                <option>300-600</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-gray-700">Traiteurs</label>
+                            <select class="w-full p-3 border-0 bg-gray-50 rounded-xl text-sm focus:ring-2 focus:ring-gray-200">
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-gray-700">Scène</label>
+                            <select class="w-full p-3 border-0 bg-gray-50 rounded-xl text-sm focus:ring-2 focus:ring-gray-200">
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-gray-700">Branchement</label>
+                            <select class="w-full p-3 border-0 bg-gray-50 rounded-xl text-sm focus:ring-2 focus:ring-gray-200">
+                                <option>PS5</option>
+                                <option>SWITCH</option>
+                                <option>Diaporama</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-10 text-center">
+                        <button class="bg-gray-900 text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-all transform hover:scale-105">
+                            Rechercher
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-24 bg-[#f5f5f7]">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="relative h-[600px] rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-110"
+                             style="background-image: url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500 group-hover:translate-y-[-10px]">
+                            <h3 class="text-3xl font-light mb-4 text-white">Événements d'entreprise</h3>
+                            <p class="text-gray-200 text-lg leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                Organisez vos événements professionnels dans un cadre unique et prestigieux.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[600px] rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-110"
+                             style="background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500 group-hover:translate-y-[-10px]">
+                            <h3 class="text-3xl font-light mb-4 text-white">Projection privée</h3>
+                            <p class="text-gray-200 text-lg leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                Profitez d'une séance privée dans des conditions exceptionnelles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[600px] rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 group-hover:scale-110"
+                             style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500 group-hover:translate-y-[-10px]">
+                            <h3 class="text-3xl font-light mb-4 text-white">Conférences</h3>
+                            <p class="text-gray-200 text-lg leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                Un espace idéal pour vos présentations et conférences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="space-y-6">
+                    <a href="#" class="block p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all" data-aos="fade-right" data-aos-duration="800">
+                        <h2 class="text-xl font-light text-center text-gray-900">Découvrir nos cinémas</h2>
+                    </a>
+                    <a href="#" class="block p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                        <h2 class="text-xl font-light text-center text-gray-900">Les offres du moment</h2>
+                    </a>
+                    <a href="#" class="block p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                        <h2 class="text-xl font-light text-center text-gray-900">Nos événements</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récapitulatif de réservation - MK2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sfpro bg-[#f5f5f7]">
+    <!-- Navigation -->
+    <nav class="bg-[#ffffff] backdrop-blur-lg bg-opacity-70 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between h-16 items-center px-8">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Compte</a>
+                    <a href="nos-salles.html" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Nos salles</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Offres</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="max-w-2xl mx-auto px-8 py-12">
+            <!-- Carte récapitulative -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <h1 class="text-2xl font-light text-center text-gray-900 mb-8">RECAPITULATIF DE VOTRE RESERVATION</h1>
+
+                <div class="space-y-6">
+                    <!-- Détails de la salle -->
+                    <div class="text-center">
+                        <p class="text-lg text-gray-800">Salle A le 01/09/2025 de 09h à 11h</p>
+                    </div>
+
+                    <!-- Options sélectionnées -->
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Captation</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Lumières / micros / mobilier etc...</span>
+                        </div>
+                    </div>
+
+                    <!-- Prix -->
+                    <div class="text-center">
+                        <div class="inline-flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <span class="text-xl font-light text-gray-900">1500€</span>
+                            <span class="ml-2 bg-yellow-400 px-2 py-1 rounded text-sm font-medium">-25%</span>
+                        </div>
+                    </div>
+
+                    <!-- Bouton de demande de devis -->
+                    <div class="pt-6">
+                        <a href="confirmation.html" class="block w-full bg-blue-400 text-center text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-blue-500 transition-all">
+                            DEMANDER UN DEVIS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

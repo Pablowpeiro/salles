@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Salles - Réservation de Salles de Cinéma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sfpro bg-[#f5f5f7]">
+    <!-- Navigation -->
+    <nav class="bg-[#ffffff] backdrop-blur-lg bg-opacity-70 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between h-16 items-center px-8">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Compte</a>
+                    <a href="nos-salles.html" class="text-sm text-gray-900 border-b-2 border-gray-900">Nos salles</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Offres</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Section MK2 BIBLIOTHÈQUE -->
+        <div class="max-w-7xl mx-auto px-8 py-12">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-light text-gray-900">MK2 BIBLIOTHÈQUE</h2>
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-full text-sm hover:bg-blue-600 transition-all transform hover:scale-105">
+                    Visite virtuelle
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Salle A -->
+                <a href="salle-detail.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group hover:shadow-md transition-all" data-aos="fade-up">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c" alt="Salle A" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">SALLE A</h3>
+                        <p class="text-gray-600 mb-4">Pour vos conférences</p>
+                        <p class="text-gray-500">600 places</p>
+                    </div>
+                </a>
+
+                <!-- Salle B -->
+                <a href="salle-detail.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba" alt="Salle B" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">SALLE B</h3>
+                        <p class="text-gray-600 mb-4">Pour vos grands événements d'entreprises</p>
+                        <p class="text-gray-500">300 places</p>
+                    </div>
+                </a>
+
+                <!-- Salle 12 -->
+                <a href="salle-detail.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group hover:shadow-md transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b" alt="Salle 12" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">SALLE 12</h3>
+                        <p class="text-gray-600 mb-4">Pour vos projections privées</p>
+                        <p class="text-gray-500">120 places</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section MK2 NATION -->
+        <div class="max-w-7xl mx-auto px-8 py-12 border-t border-gray-200">
+            <h2 class="text-3xl font-light text-gray-900 mb-8">MK2 NATION</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Salle 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm group" data-aos="fade-up">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c" alt="Salle 1" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">SALLE 1</h3>
+                    </div>
+                </div>
+
+                <!-- Le Loft -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba" alt="Le Loft" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">LE LOFT</h3>
+                    </div>
+                </div>
+
+                <!-- Le Rooftop -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-w-16 aspect-h-9 relative">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b" alt="Le Rooftop" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-light mb-2">LE ROOFTOP</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fenêtre de filtrage -->
+        <div class="fixed left-0 top-1/2 transform -translate-y-1/2 bg-yellow-300 p-4 rounded-r-lg shadow-lg">
+            <button class="text-sm font-medium">
+                Filtrer les salles
+            </button>
+        </div>
+    </main>
+
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 

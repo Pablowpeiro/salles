@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créneaux - Lundi 1er Septembre 2025 - Salle A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sfpro bg-[#f5f5f7]">
+    <!-- Navigation -->
+    <nav class="bg-[#ffffff] backdrop-blur-lg bg-opacity-70 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between h-16 items-center px-8">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Compte</a>
+                    <a href="nos-salles.html" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Nos salles</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Offres</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="max-w-4xl mx-auto px-8 py-12">
+            <!-- En-tête -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-light text-gray-900 mb-4">LUNDI</h1>
+                <p class="text-xl text-gray-600">1er Septembre 2025</p>
+                <p class="text-lg text-gray-500 mt-2">À partir de 1500€</p>
+            </div>
+
+            <!-- Grille horaire -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <!-- Échelle horaire -->
+                <div class="grid grid-cols-[80px_1fr] gap-4">
+                    <!-- Heures -->
+                    <div class="space-y-8 text-sm text-gray-500">
+                        <div>07:00</div>
+                        <div>07:30</div>
+                        <div>08:00</div>
+                        <div>08:30</div>
+                        <div>09:00</div>
+                        <div>09:30</div>
+                        <div>10:00</div>
+                        <div>10:30</div>
+                        <div>11:00</div>
+                        <div>11:30</div>
+                        <div>12:00</div>
+                        <div>12:30</div>
+                        <div>13:00</div>
+                        <div>13:30</div>
+                        <div>14:00</div>
+                        <div>14:30</div>
+                        <div>15:00</div>
+                        <div>15:30</div>
+                        <div>16:00</div>
+                        <div>16:30</div>
+                        <div>17:00</div>
+                        <div>17:30</div>
+                        <div>18:00</div>
+                        <div>18:30</div>
+                        <div>19:00</div>
+                    </div>
+
+                    <!-- Créneaux -->
+                    <div class="relative">
+                        <!-- Créneau 1500€ -->
+                        <div class="absolute top-32 left-0 right-4 h-32 border-2 border-blue-500 rounded-lg bg-blue-50 p-4 cursor-pointer hover:bg-blue-100 transition-colors" onclick="toggleOptions('options1500')">
+                            <div class="flex justify-between items-center h-full">
+                                <span class="text-xl font-light">1500€</span>
+                                <div class="bg-yellow-400 px-2 py-1 rounded text-sm font-medium">-25%</div>
+                            </div>
+                        </div>
+
+                        <!-- Options pour 1500€ -->
+                        <div id="options1500" class="hidden absolute top-64 left-0 right-4 bg-white rounded-lg shadow-lg border border-gray-200 z-10">
+                            <div class="p-4 space-y-3">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                                    <span>Traiteur</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                                    <span>PS5</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                                    <span>Switch</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                                    <span>Captation</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                                    <span>Lumières / micros / mobilier etc...</span>
+                                </label>
+                                <div class="pt-4">
+                                    <a href="recapitulatif.html" class="block w-full bg-blue-500 text-center text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                                        VALIDER
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Créneau 1750€ -->
+                        <div class="absolute top-80 left-0 right-4 h-32 border-2 border-blue-500 rounded-lg bg-blue-50 p-4 cursor-pointer hover:bg-blue-100 transition-colors">
+                            <div class="flex justify-between items-center h-full">
+                                <span class="text-xl font-light">1750€</span>
+                            </div>
+                        </div>
+
+                        <!-- Créneau 2000€ -->
+                        <div class="absolute top-[32rem] left-0 right-4 h-32 border-2 border-blue-500 rounded-lg bg-blue-50 p-4 cursor-pointer hover:bg-blue-100 transition-colors">
+                            <div class="flex justify-between items-center h-full">
+                                <span class="text-xl font-light">2000€</span>
+                            </div>
+                        </div>
+
+                        <!-- Créneau 3000€ -->
+                        <div class="absolute top-[44rem] left-0 right-4 h-32 border-2 border-blue-500 rounded-lg bg-blue-50 p-4 cursor-pointer hover:bg-blue-100 transition-colors">
+                            <div class="flex justify-between items-center h-full">
+                                <span class="text-xl font-light">3000€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="mt-8 space-y-4">
+                <a href="disponibilites.html" class="block w-full bg-gray-100 text-center text-gray-700 px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-200 transition-all">
+                    Retour au calendrier
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleOptions(optionsId) {
+            // Ferme tous les menus d'options
+            document.querySelectorAll('[id^="options"]').forEach(el => {
+                if (el.id !== optionsId) {
+                    el.classList.add('hidden');
+                }
+            });
+
+            // Bascule le menu d'options cliqué
+            const optionsElement = document.getElementById(optionsId);
+            optionsElement.classList.toggle('hidden');
+        }
+
+        // Ferme le menu si on clique en dehors
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.relative')) {
+                document.querySelectorAll('[id^="options"]').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
+        });
+
+        // Mise à jour dynamique du prix
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updatePrice);
+        });
+
+        function updatePrice() {
+            // Logique de mise à jour du prix en fonction des options sélectionnées
+            // À implémenter selon vos besoins
+        }
+    </script>
+</body>
+</html> 

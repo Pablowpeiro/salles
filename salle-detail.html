@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salle A - MK2 Bibliothèque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sfpro bg-[#f5f5f7]">
+    <!-- Navigation -->
+    <nav class="bg-[#ffffff] backdrop-blur-lg bg-opacity-70 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between h-16 items-center px-8">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Compte</a>
+                    <a href="nos-salles.html" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Nos salles</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Offres</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-gray-900 transition-colors">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="max-w-7xl mx-auto px-8 py-12">
+            <!-- En-tête de la salle -->
+            <div class="mb-8">
+                <h1 class="text-4xl font-light text-gray-900 mb-4">SALLE A</h1>
+                <p class="text-xl text-gray-600">Réservez la plus grande salle du réseau mk2, avec son écran de ...</p>
+            </div>
+
+            <!-- Galerie photo -->
+            <div class="relative mb-12" data-aos="fade-up">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c" alt="Salle A" class="object-cover w-full h-full">
+                    
+                    <!-- Boutons de navigation -->
+                    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+
+                    <!-- Indicateur GALLERIE PHOTO -->
+                    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 bg-white/80 px-4 py-2 rounded-full">
+                        <span class="text-sm font-medium">GALLERIE PHOTO</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informations et bouton de réservation -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm" data-aos="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-2xl font-light mb-4">Caractéristiques</h2>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Capacité : 600 places</li>
+                            <li>• Écran géant</li>
+                            <li>• Son Dolby Atmos</li>
+                            <li>• Accessibilité PMR</li>
+                            <li>• Climatisation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-light mb-4">Services inclus</h2>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Personnel d'accueil</li>
+                            <li>• Technicien son et image</li>
+                            <li>• Vestiaire</li>
+                            <li>• Wifi haut débit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="disponibilites.html" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-all transform hover:scale-105">
+                        VOIR LES DISPONIBILITÉS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 
